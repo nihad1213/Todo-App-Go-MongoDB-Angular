@@ -2,8 +2,10 @@ package main
 
 import (
 	"fmt"
+	"back-go/config"
 )
 
 func main() {
-	fmt.Println("App Test")
+	secret := config.GenerateSecretKey()
+	fmt.Println(secret)
 }
